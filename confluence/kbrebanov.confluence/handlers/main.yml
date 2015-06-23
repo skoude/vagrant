@@ -2,5 +2,6 @@
 # handlers file for confluence
 
 - name: restart confluence
+  sudo: yes
   service: name=confluence state=restarted pattern=confluence
   tags: confluence
